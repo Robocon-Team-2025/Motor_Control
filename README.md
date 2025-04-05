@@ -1,3 +1,26 @@
+# FDCAN Setup:
+
+## Configure and follow the parameter setting as figure below:
+![FDCAN Setup 1](https://github.com/Robocon-Team-2025/Embedded_System/blob/main/img/Screenshot%202025-04-06%20005545.png)
+
+![FDCAN Setup 2](https://github.com/Robocon-Team-2025/Embedded_System/blob/main/img/Screenshot%202025-04-06%20005609.png)
+
+### Can Bus Baud Rate Calculation:
+![Baudrate Formula](https://github.com/Robocon-Team-2025/Embedded_System/blob/main/img/Screenshot%202025-04-06%20010441.png)
+
+- Where:
+	- `PCLK1`: Peripheral Clock Frequency (in Hz)
+	- `Prescaler`: The prescaler value (determined by your setup)
+	- `TSEG1`: Time segment 1 (in number of quanta)
+	- `TSEG2`: Time segment 2 (in number of quanta)
+
+### Example Calculation
+For example, if the peripheral clock is 120 MHz, the prescaler is 8, `TSEG1` is 12, and `TSEG2` is 2, the baud rate will be: 1Mb/s
+
+
+![Activate NVIC Interrupt](https://github.com/Robocon-Team-2025/Embedded_System/blob/main/img/Screenshot%202025-04-06%20005623.png)
+
+
 # Motor control in STM32  
 
 [RoboMaster M3508](https://github.com/RoboGrinder-ECE/Motor_Control/blob/master/Document/RoboMaster%20M3508%20P19%20Brushless%20DC%20Gear%20Motor%20V1.0.pdf)
