@@ -8,6 +8,7 @@
 ### Can Bus Baud Rate Calculation:
 ![Baudrate Formula](https://github.com/Robocon-Team-2025/Embedded_System/blob/main/img/Screenshot%202025-04-06%20010441.png)
 
+- Link to calculate time segmen and precaler: [Canlink](http://www.bittiming.can-wiki.info/)
 - Where:
 	- `PCLK1`: Peripheral Clock Frequency (in Hz)
 	- `Prescaler`: The prescaler value (determined by your setup)
